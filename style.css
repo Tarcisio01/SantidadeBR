@@ -1,0 +1,172 @@
+agora meu style.css
+/* Necessário para o carrossel funcionar */
+.hero-background-container {
+    position: relative;
+    overflow: hidden; /* Garante que as imagens que saem não sejam visíveis */
+}
+
+#hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out; /* Controla a transição suave */
+}
+
+.slider-image.active {
+    opacity: 1;
+}
+
+/* Tipografia Principal */
+.heading-primary {
+    font-size: 3rem; /* 48px */
+    font-weight: 800; /* extra-bold */
+}
+@media (min-width: 640px) {
+    .heading-primary {
+        font-size: 4rem; /* 64px */
+    }
+}
+
+.heading-secondary {
+    font-size: 2.25rem; /* 36px */
+    font-weight: 700; /* bold */
+}
+
+.shadow-text {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Botão Primário */
+.btn-primary {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    color: #4f46e5; /* indigo-700 */
+    font-weight: 600;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+.btn-primary:hover {
+    background-color: #eef2ff; /* indigo-50 */
+    transform: translateY(-2px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeito de Hover nos Cards */
+.card-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid da Lista de Santos */
+.saints-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+@media (min-width: 640px) {
+    .saints-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .saints-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Efeito de Fade-in */
+.fade-in {
+    animation: fadeIn 0.7s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- 2. Menu Mobile --- */
+#mobile-menu {
+    transition: max-height 0.3s ease-out;
+}
+
+/* --- 3. Regras de Responsividade --- */
+
+/* Layouts flexíveis que empilham em mobile */
+.flex-responsive {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) { /* md: */
+    .flex-responsive {
+        flex-direction: row;
+    }
+}
+
+/* Padding responsivo */
+.responsive-padding {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+@media (min-width: 640px) { /* sm: */
+    .responsive-padding {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+@media (min-width: 1024px) { /* lg: */
+    .responsive-padding {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+/* Imagens responsivas */
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.link-podcast:hover {
+  color: #d62828;
+  text-decoration: underline;
+  letter-spacing: 0.3px;
+}
+.link-podcast {
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #e63946;
+  background-color: #f1faee;
+  border-radius: 8px;
+  width: fit-content;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+

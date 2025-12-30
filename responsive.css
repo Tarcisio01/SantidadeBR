@@ -1,0 +1,141 @@
+/* =========================================================================
+   RESPONSIVIDADE – AJUSTES REAIS DO PROJETO
+   ========================================================================= */
+
+/* ==================================================
+   TELAS PEQUENAS – MOBILE (até 640px)
+================================================== */
+@media (max-width: 640px) {
+
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Hero */
+    .hero-background-container {
+        min-height: 60vh;
+        padding: 1rem;
+    }
+
+    /* Grid de santos */
+    .saints-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Página de detalhes */
+    .saint-detail {
+        flex-direction: column;
+    }
+
+    .saint-image {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    .saint-bio {
+        width: 100%;
+    }
+
+    /* Botão */
+    .btn-primary {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* ==================================================
+   TABLETS – até 768px
+================================================== */
+@media (max-width: 768px) {
+
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .hero-background-container {
+        min-height: 65vh;
+    }
+
+    .saints-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* ==================================================
+   DESKTOPS MÉDIOS – até 1024px
+================================================== */
+@media (max-width: 1024px) {
+
+    .container {
+        max-width: 1024px;
+    }
+
+    .saints-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==================================================
+   DESKTOPS GRANDES – 1280px +
+================================================== */
+@media (min-width: 1280px) {
+
+    .container {
+        max-width: 1280px;
+    }
+
+    .saints-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* ==================================================
+   TELAS MUITO PEQUENAS – até 360px
+================================================== */
+@media (max-width: 360px) {
+
+    .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .hero-background-container {
+        min-height: 50vh;
+    }
+
+    .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* ==================================================
+   UTILITÁRIOS RESPONSIVOS
+================================================== */
+
+.responsive-text {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.responsive-heading {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.responsive-padding {
+    padding: clamp(1rem, 3vw, 3rem);
+}
+.responsive-margin {
+    margin: clamp(1rem, 3vw, 3rem);
+}
+@media (min-width: 768px) {
+    .responsive-padding {
+        padding: clamp(1.5rem, 2vw, 4rem);
+    }
+    .responsive-margin {
+        margin: clamp(1.5rem, 2vw, 4rem);
+    }
+}

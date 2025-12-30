@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SantidadeBR – Onde a Fé e o Brasil se Encontram</title>
+
+    <meta name="description" content="Conheça a história dos santos, beatos, servos de Deus e veneráveis do Brasil. Uma jornada de fé e inspiração.">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body class="antialiased text-gray-800 bg-gray-50">
+
+    <header class="sticky top-0 z-50 bg-white shadow-lg" role="banner">
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+
+                <div class="flex-shrink-0 flex items-center">
+    <a href="#home" class="flex items-center gap-3 group" title="Voltar ao Início">
+        
+        <img src="./Imagens/brasao.png" alt="Logo SantidadeBR" class="h-20 w-auto transition transform group-hover:scale-105">
+        
+        <span class="text-2xl font-extrabold tracking-tight text-indigo-700 group-hover:text-indigo-800 transition">
+            SantidadeBR
+        </span>
+    </a>
+</div>
+
+                <nav class="hidden md:flex space-x-8"
+                     aria-label="Navegação principal"
+                     id="main-navigation">
+
+                    <a href="#home" class="nav-link text-gray-600 hover:text-indigo-600 transition font-medium">Início</a>
+                    <a href="#santos" class="nav-link text-gray-600 hover:text-indigo-600 transition font-medium">Santos</a>
+                    <a href="#beatos" class="nav-link text-gray-600 hover:text-indigo-600 transition font-medium">Beatos</a>
+                    <a href="#servos" class="nav-link text-gray-600 hover:text-indigo-600 transition font-medium">Servos de Deus</a>
+                    <a href="#veneraveis" class="nav-link text-gray-600 hover:text-indigo-600 transition font-medium">Veneráveis</a>
+                </nav>
+
+                <div class="md:hidden">
+                    <button
+                        type="button"
+                        id="mobile-menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transition"
+                        aria-controls="mobile-menu"
+                        aria-expanded="false"
+                        aria-label="Abrir menu principal">
+
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                             viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="md:hidden hidden bg-indigo-50 shadow-inner"
+             id="mobile-menu"
+             aria-label="Menu mobile">
+
+            <div class="px-2 pt-2 pb-3 space-y-1 flex flex-col">
+                <a href="#home" class="nav-link-mobile block px-3 py-2 rounded-md font-medium hover:bg-indigo-200">Início</a>
+                <a href="#santos" class="nav-link-mobile block px-3 py-2 rounded-md font-medium hover:bg-indigo-200">Santos</a>
+                <a href="#beatos" class="nav-link-mobile block px-3 py-2 rounded-md font-medium hover:bg-indigo-200">Beatos</a>
+                <a href="#servos" class="nav-link-mobile block px-3 py-2 rounded-md font-medium hover:bg-indigo-200">Servos de Deus</a>
+                <a href="#veneraveis" class="nav-link-mobile block px-3 py-2 rounded-md font-medium hover:bg-indigo-200">Veneráveis</a>
+            </div>
+        </nav>
+
+        <a
+            href="https://www.youtube.com/watch?v=FFSKvqRFOzE&t=369s"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-podcast block text-center bg-indigo-600 text-white py-2 text-sm hover:bg-indigo-700 transition">
+            Assista: Podcast com PADRE LÚCIO (Comunidade Bethânia) | SantoFlow Podcast
+        </a>
+
+    </header>
+
+    <main id="app-content" role="main">
+        </main>
+
+    <footer class="bg-gray-800 text-white py-8" role="contentinfo">
+        <div class="container mx-auto px-4 text-center">
+
+            <nav class="mb-4 space-x-6">
+                <a href="#" class="hover:text-indigo-400 transition">Sobre</a>
+                <a href="#" class="hover:text-indigo-400 transition">Contato</a>
+                <a href="#" class="hover:text-indigo-400 transition">Termos</a>
+            </nav>
+
+            <p class="text-sm text-gray-400">
+                &copy; <time datetime="2025">2025</time> SantidadeBR. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <script src="data.js" defer></script>
+    <script src="router.js" defer></script>
+    <script src="app.js" defer></script>
+
+</body>
+</html>
